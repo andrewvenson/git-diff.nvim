@@ -4,7 +4,7 @@ function M.setup(opts)
 	opts = opts or {}
 
 	vim.keymap.set("n", "<leader>gd", function()
-		require("gitt-diff.git").show()
+		require("git-diff.git").show()
 	end, { desc = "[G]it local [D]iff (vs base branch)" })
 
 	vim.keymap.set("n", "<leader>gD", function()
